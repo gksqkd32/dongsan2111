@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="광고 클릭시 광고 페이지로 이동 합니다."
+            android:textSize="10pt"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="505dp"
+            android:layout_weight="9"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ad"
+            android:onClick="myTouchListener"
+            />
+
+        <Button
+            android:id="@+id/btn_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Touch Here"
+            android:textSize="20pt"
+            android:layout_gravity="center"
+            />
+
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
+
